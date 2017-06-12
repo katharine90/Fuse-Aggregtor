@@ -3,6 +3,13 @@ package com.mycompany;
 import org.apache.camel.Exchange;
 import org.apache.camel.processor.aggregate.AggregationStrategy;
 
+/**
+ * This is a Aggregation strategy class that aggregates messages
+ * @author jastk
+ * @version 1.0.0
+ * @since 2017.06.09
+ */
+
 public class AggregationStrategyClass implements AggregationStrategy{
 
 	@Override
