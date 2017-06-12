@@ -28,7 +28,7 @@ public class AggregatorProgram {
 		
 		/**
 		 * Object Api1 and Api2 requests the body of first two routes that are located
-		 * in the AggregatorRoute class and later convert then into strings.
+		 * in the AggregatorRoute class and later convert them into strings.
 		 * The converted strings (response1 and response2) are late send as messages
 		 * with a HEADERID set to "1". 
 		 */
