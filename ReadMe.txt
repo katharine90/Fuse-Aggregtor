@@ -1,4 +1,7 @@
+=================================================
 Fuse Aggregator – a Fuse integration Project
+=================================================
+
 This application is written with java DSL and build with Maven.  
 It’s created mainly for composite services taken from two different json APIs that are later aggregated together as one message.
 
