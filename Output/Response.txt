@@ -52,4 +52,4 @@ First respond: {
    ],
    "status" : "OK"
 }
-Second respond: {"type":"success","value":{"id":3,"quote":"Spring has come quite a ways in addressing developer enjoyment and ease of use since the last time I built an application using it."}}
+Second respond: {"type":"success","value":{"id":5,"quote":"Spring Boot solves this problem. It gets rid of XML and wires up common components for me, so I don't have to spend hours scratching my head just to figure out how it's all pieced together."}}

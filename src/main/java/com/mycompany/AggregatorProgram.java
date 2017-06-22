@@ -8,8 +8,11 @@ import org.apache.camel.impl.DefaultExchange;
 import org.apache.camel.util.ExchangeHelper;
 
 /**
- * This class creates a CamelContext that connects the AggregatorRoute 
- * with a producer template
+ * This class creates a CamelContext that connects the AggregatorRoute with a
+ * producer template. Object Api1 and Api2 requests the body of first two routes
+ * that are located in the AggregatorRoute class and later convert them into
+ * strings. The converted strings (response1 and response2) are late send as
+ * messages with a HEADERID set to "1".
  * 
  * @author jastk
  * @version 1.0.0
@@ -25,13 +28,6 @@ public class AggregatorProgram {
 		context.start();
 		Thread.sleep(5000);
 		ProducerTemplate template = context.createProducerTemplate();
-		
-		/**
-		 * Object Api1 and Api2 requests the body of first two routes that are located
-		 * in the AggregatorRoute class and later convert them into strings.
-		 * The converted strings (response1 and response2) are late send as messages
-		 * with a HEADERID set to "1". 
-		 */
 
 		Object Api1 = template.requestBody("direct:firstApi", null, String.class);
 		Object Api2 = template.requestBody("direct:secondApi", null, String.class);

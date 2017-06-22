@@ -18,7 +18,7 @@ The first two routes are requests to API’s.
 Both API’s are json applications. The first API is a google maps API that sends information about a chosen location.
 The second API randomly fetches quotes about Spring Boot. 
 The third and last route aggregates both API’s using Aggregation Strategy that is located in the AggregationStrategyClass.java. 
-
+The aggregated message is received in Output folder. 
 
 
 =========================================
@@ -36,7 +36,7 @@ To run the project you can execute the following Maven goal
 To deploy the project in OSGi. For example using Apache Karaf.
 You can run the following command from its shell:
 
-    osgi:install -s mvn:com.mycompany/camel-java/1.0.0-SNAPSHOT
+    osgi:install -s mvn:com.mycompany/camel-aggregator/1.0.0-SNAPSHOT
 
 For more help see the Apache Camel documentation
 
